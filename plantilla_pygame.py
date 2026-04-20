@@ -46,14 +46,22 @@ while not hecho:
 
     # Rectángulo: pygame.draw.rect(pantalla, color, [x, y, ancho, alto], grosor)
     #   grosor=0 → relleno; grosor>0 → solo borde
-    pygame.draw.rect(pantalla, AZUL, [50, 100, 150, 80], 0)
-    pygame.draw.rect(pantalla, NEGRO, [50, 100, 150, 80], 2)
+    pygame.draw.rect(pantalla, AZUL, [225, 150, 250, 200], 0)
+    pygame.draw.rect(pantalla, NEGRO, [225,150, 250, 200], 2)
 
     # Elipse / círculo: pygame.draw.ellipse(pantalla, color, [x, y, ancho, alto], grosor)
     pygame.draw.ellipse(pantalla, ROJO, [250, 100, 120, 120], 0)
 
+    # Rectángulo: pygame.draw.rect(pantalla, color, [x, y, ancho, alto], grosor)
+    pygame.draw.rect(pantalla, NEGRO, [255, 45, 50, 100], 0)
+    pygame.draw.rect(pantalla, NEGRO, [255,45, 50, 100], 2)
+
     # Polígono: pygame.draw.polygon(pantalla, color, [[x1,y1],[x2,y2],...], grosor)
-    pygame.draw.polygon(pantalla, VERDE, [[450, 50], [550, 200], [350, 200]], 0)
+    pygame.draw.polygon(pantalla, VERDE, [[200, 150], [350, 30], [500, 150]], 0)
+
+    # Rectángulo: pygame.draw.rect(pantalla, color, [x, y, ancho, alto], grosor)
+    pygame.draw.rect(pantalla, ROJO, [255, 250, 60, 100], 0)
+    pygame.draw.rect(pantalla, NEGRO, [255,250, 60, 100], 2)
 
     # Arco: pygame.draw.arc(pantalla, color, [x, y, ancho, alto], ang_inicio, ang_fin, grosor)
     #   ángulos en radianes; 0 = derecha, math.pi/2 = arriba
